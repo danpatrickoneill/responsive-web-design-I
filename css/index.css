@@ -333,6 +333,14 @@ footer {
 @media( max-width: 800px ) {
   .content-box button {
     padding: 10% 40%;
+    font-size: 1.25em;
+  }
+}
+
+@media( max-width: 500px ) {
+  .content-box button {
+    padding: 10% 40%;
+    font-size: 1.5em;
   }
 }
 
