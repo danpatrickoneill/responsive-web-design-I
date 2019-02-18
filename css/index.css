@@ -261,7 +261,7 @@ footer {
 /* Services Page Markup Starts Here */
 
 .services-container {
-	width: 880px;
+	max-width: 880px;
 	margin: auto;
 }
 
@@ -273,28 +273,51 @@ footer {
 	font-size: 26px;
 }
 
+.services-header-img {
+  width: 100%;
+  height: auto;
+}
+
 .services-top {
-	margin: 20px 0;
+	margin: 20px;
+}
+
+@media ( max-width: 800px ) {
+  .services-top {
+    margin: 0 2.5%;
+  }
 }
 
 .services-content {
-	height: 830px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
+	justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .content-box {
-	width: 425px;
-	height: 250px;
+	width: 45%;
 	padding: 25px;
+  margin-bottom: 20px;
 	background: #F4F4F4;
 	border: 1px solid black;
 }
 
+@media ( max-width: 500px ) {
+  .services-content {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .content-box {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+}
+
 .services-bottom {
 	display: flex;
+  margin: 20px;
 }
 
 .content-box button {
@@ -305,6 +328,18 @@ footer {
 	border-radius: 6px;
 	padding: 10px 40px;
 	margin-top: 25px;
+}
+
+@media( max-width: 800px ) {
+  .content-box button {
+    padding: 10% 40%;
+  }
+}
+
+@media( max-width: 800px ) {
+  .services-info-img {
+    display: none;
+  }
 }
 
 .services-bottom p{
@@ -318,6 +353,12 @@ footer {
 
 .services-bottom li {
 	padding: 10px 0;
+}
+
+@media ( max-width: 800px ) {
+  .services-bottom {
+    margin: 0 2.5%;
+  }
 }
 
 .services-footer {
