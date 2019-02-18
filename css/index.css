@@ -84,10 +84,13 @@ h1, h2, h3, h4, h5 {
 
 @media ( max-width: 800px) {
   .top-nav {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .logo-link {
     order: -1;
+    margin: 20px 40% 40px; 
   }
 }
 
@@ -127,7 +130,7 @@ header button {
 	width: 150px;
 }
 
-@media ( max-width: 800px) {
+@media ( max-width: 800px ) {
   header img {
     display: none;
   }
@@ -149,6 +152,12 @@ header button {
   border: 1px solid green;
 }
 
+@media ( max-width: 800px) {
+  .top-content {
+    justify-content: space-around;
+  }
+}
+
 .middle-img {
   width: 100%;
   height: auto;
@@ -165,10 +174,24 @@ header button {
   margin-bottom: 20px;
 }
 
+@media ( max-width: 800px) {
+  .bottom-content {
+    justify-content: space-around;
+  }
+}
+
+@media ( max-width: 800px) {
+  address {
+    margin-left: 10px;
+  }
+}
+
 address a {
 	text-decoration: none;
 	color: black;
 }
+
+
 
 footer {
 	margin: 50px 0;
